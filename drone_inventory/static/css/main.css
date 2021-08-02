@@ -1,0 +1,100 @@
+/* Nav Styles */
+
+.ct-nav {
+    display: flex;
+    justify-content: space-between
+}
+
+/*Target Main logo image */
+.ct-nav img{
+    width: 25%;
+    max-width: 100%;
+    margin-left: 2vw;
+}
+ul#horizontal-list{
+    min-width: 65vw;
+    list-style: none;
+    padding-top: 2.5vw;   
+}
+
+ul#horizontal-list li, ul#horizontal-list a{
+    display: inline;
+    text-decoration: none;
+    padding: 0.5vw;
+    color: black
+}
+
+#horizontal-list a:nth-last-child(1){
+    border: 2px solid blue;
+    border-radius: 11px;
+    margin-right: 0.2vw;
+}
+/* End of Nav styling */
+
+/* Start of Header/Hero Section */
+#header-text{
+    padding: 2vw;
+}
+
+.header-image{
+    width: 90%;
+    max-width: 100%;
+}
+/* End of Header/Hero Section */
+
+/* Start of Middle Section */
+#middle-text{
+    text-align: center;
+    padding: 5vh;
+}
+
+#middle-text h2{
+    padding: 1.5vw
+}
+/* End of Middle Section styling */
+
+/* Start of Features Section */
+#api-image, #graphql-image, #db-image{
+    display: block;
+    margin: auto;
+    margin-bottom: 10vh;
+}
+
+#features-section{
+    margin: 4vw
+}
+
+#features-section div{
+    text-align: center
+}
+ /* End of Features Section */
+
+/* Start Community section */
+#slack-button{
+    border: 1.5px solid blue
+}
+
+#drone-image{
+    width: 50%;
+    max-width: 75%;
+    margin-left: 3vw
+}
+
+/* End of Community section */
+
+/* Start of Footer */
+.footer-text-flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw
+}
+
+#footer-logo{
+    width: 100%;
+    max-width: 100%
+}
+
+#footer{
+    border-top: 2px solid gray;
+    margin-top: 20vh
+}
