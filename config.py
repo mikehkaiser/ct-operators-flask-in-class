@@ -12,3 +12,6 @@ class Config:
     we'll leave them exposed in Config
     """
     SECRET_KEY = "In a hole in the ground..."
+    SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')
+# To connect with SQL
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
