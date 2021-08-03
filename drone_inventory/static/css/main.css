@@ -58,6 +58,7 @@ ul#horizontal-list li, ul#horizontal-list a{
     display: block;
     margin: auto;
     margin-bottom: 10vh;
+    margin-top: 3vh
 }
 
 #features-section{
@@ -70,6 +71,12 @@ ul#horizontal-list li, ul#horizontal-list a{
  /* End of Features Section */
 
 /* Start Community section */
+#comm-img-div{
+    display: flex;
+    justify-content: center;
+    align-content: center
+}
+
 #slack-button{
     border: 1.5px solid blue
 }
@@ -77,7 +84,6 @@ ul#horizontal-list li, ul#horizontal-list a{
 #drone-image{
     width: 50%;
     max-width: 75%;
-    margin-left: 3vw
 }
 
 /* End of Community section */
