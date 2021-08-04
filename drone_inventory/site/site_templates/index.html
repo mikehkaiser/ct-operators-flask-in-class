@@ -2,6 +2,25 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<!-- Flask Flashed message to user -->
+{% with messages = get_flashed_messages(with_categories = true) %}
+    {% if messages %}
+        {% for cat, msg in messages %}
+            {% if cat == 'user-created' %}
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {{ msg }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            {% elif cat == 'auth-success' %}
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {{ msg }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
 
 <div class="container">
     <header class="row">
@@ -20,7 +39,7 @@
         </div>
     </header>
     <!-- Header Section End -->
-    
+
     <!-- Start of Middle Section -->
     <section class="row">
         <div class="col-12" id="middle-text">

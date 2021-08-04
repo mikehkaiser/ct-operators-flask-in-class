@@ -2,8 +2,23 @@
 
 {% block content %}
 
+<!-- Auth-failed flash message -->
+{% with messages = get_flashed_messages(with_categories = true) %}
+    {% if messages %}
+        {% for cat, msg in messages %}
+            {% if cat == 'auth-failed' %}
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    {{ msg }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endwith %}
 
-<h1>Sign in page goes here</h1>
 
+<h1>Sign in here</h1>
+
+{% include 'form.html' %}
 
 {% endblock content %}
