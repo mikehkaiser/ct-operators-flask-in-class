@@ -14,7 +14,7 @@ def signup():
         email = form.email.data
         password = form.password.data
         print([email, password])
-        
+        # if email in User.query.filter(User.email )
         user = User(email, password)
         db.session.add(user)
         db.session.commit()
